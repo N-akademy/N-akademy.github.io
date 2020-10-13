@@ -1,78 +1,50 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+Vous allez devoir créer une application web utilisant le framework Laravel.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Ce client souhaite solliciter votre aide, et vous fait confiance pour la suite des opérations.
 
-## About Laravel
+Votre client souhaite un site vitrine sur les animaux, composé d'articles (d'animaux) possédant plusieurs informations :
+- un nom
+- un sexe
+- un âge
+- un poids
+- une taille
+- une race (spécifique)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Également des informations sur la race :
+- un nom
+- une classification (mammifères, etc)
+- une espérance de vie
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Vous devrez réaliser un C.R.U.D permettant de gérer des animaux, mais également un sur les races (cela fait 2 C.R.U.D).
+Vous devrez fournir un système de connexion, et ainsi gérer certains accès à certaines pages :
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Guest :
+- Liste des animaux du site vitrine
+- Page de login
+- (PAS D'INSCRIPTION)
 
-## Learning Laravel
+Authentifié :
+- Liste des animaux du site vitrine
+- Liste des races présentes sur le site vitrine
+- Les deux C.R.U.D
+- Page de logout
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Cela signifie donc que les utilisateurs (users) devront posséder un rôle particulier, dont les informations suivantes :
+- un nom de rôle
 
-## Laravel Sponsors
+Le site doit être un minimum agréable. 
+Vous devrez faire attention aux erreurs lors des C.R.U.D, lors de l'envoi des données, etc. Vous utiliserez du templating afin de gagner un peu de temps pour tout ce qui touche au header, footer, etc.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Également, vous devrez créer vos tables avec des migrations et tenter d'insérer des données via le principe de seeding.
+Votre rendu devra donc comporter ces fichiers contenant des données. Vous ferez attention à bien faire vos relations dans vos models.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
 
-## Contributing
+BONUS : Si vous utilisez les 'resources' pour vos routes/controllers, un bonus vous sera accordé.
+BONUS(2): L'accès aux C.R.U.D devront être accessibles pour l'administrateur uniquement.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Rendu : 15h30 sur Git. Vous enverrez votre lien sur le Google Classroom.
 
-## Code of Conduct
+(Si vous préférez un autre thème que les animaux, sachez que vous êtes tout à fait libre tant que vous ne réutilisez pas le thème des livres et que vous créez bien les tables et clefs étrangères demandées)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Exemples de thèmes : Magasin d'instruments de musique, magasin d'articles de pêche, de boulangerie, etc.
